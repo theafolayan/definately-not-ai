@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 app = FastAPI()
 
-model_name = "mistralai/Mistral-7B-Instruct-v0.2"
+model_name = "ahxt/LiteLlama-460M-1T"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
